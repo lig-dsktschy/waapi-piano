@@ -1,0 +1,45 @@
+:root {
+    box-sizing: border-box;
+}
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+html, body, ul {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.keyboard {
+    transition: background-color .1s ease 0s;
+}
+.keyboard:active {
+    background-color: #DFFF30;
+}
+.keyboard-white {
+    float: left;
+    width: calc(100% / 8);
+    height: 100%;
+    border: 1px solid black;
+}
+.keyboard-black {
+    height: 60%;
+    position: absolute;
+    top: 0;
+    width: calc(100% / 12);
+    background-color: black;
+    border: 2px solid black;
+}
+.keyboard:nth-of-type(2) {left: 8%}
+.keyboard:nth-of-type(4) {left: 21%}
+.keyboard:nth-of-type(7) {left: 45%}
+.keyboard:nth-of-type(9) {left: 58%}
+.keyboard:nth-of-type(11) {left: 71%}

@@ -1,0 +1,24 @@
+:root {
+    box-sizing: border-box;
+}
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+body {
+    display: table;
+}
+.container {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.playbackRate {
+    width: 75%;
+}
